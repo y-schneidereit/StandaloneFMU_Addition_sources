@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-// model specific constants
-# define GUID "{8f600e4d-a6f4-c2ed-3558-a9cbedce34b9}"
 #ifndef FMI2_FUNCTION_PREFIX
 #define FMI2_FUNCTION_PREFIX Addition_
 #endif
-
-// no runtime resources
-#define RESOURCE_LOCATION "file:///C:/Users/schyan01/github/standalonefmu_addition_sources" // absolut path to the unziped fmu
 #include "fmi2Functions.h"
+
+// model specific constants
+# define GUID "{8f600e4d-a6f4-c2ed-3558-a9cbedce34b9}"
+#define RESOURCE_LOCATION "file:///C:/Users/schyan01/github/standalonefmu_addition_sources" // absolut path to the unziped fmu
 
 // callback functions
 static void cb_logMessage(fmi2ComponentEnvironment componentEnvironment, fmi2String instanceName, fmi2Status status, fmi2String category, fmi2String message, ...) {
