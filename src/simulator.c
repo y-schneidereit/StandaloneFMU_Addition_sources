@@ -7,7 +7,7 @@
 #endif
 
 // no runtime resources
-#define RESOURCE_LOCATION "file:///C:/Users/schyan01/git/fmu_addition" // absolut path to the unziped fmu
+#define RESOURCE_LOCATION "file:///C:/Users/schyan01/github/standalonefmu_addition_sources" // absolut path to the unziped fmu
 #include "fmi2Functions.h"
 
 // callback functions
